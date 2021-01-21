@@ -27,7 +27,7 @@ function cutImg({ ctx, rowCount, colCount }) {
   }
   return Promise.all(imgPromiseArr);
 }
-function cropImg(url) {
+function cropImg({ url, rowCount, colCount }) {
   // 获取图片宽高 绘制到canvas中
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");
@@ -40,7 +40,7 @@ function cropImg(url) {
       canvas.height = imgHeight;
       ctx.drawImage(img, 0, 0, imgWidth, imgHeight);
       // 分割图片
-      const imgArr = await cutImg({ ctx, rowCount: 3, colCount: 2 });
+      const imgArr = await cutImg({ ctx, rowCount, colCount });
       resolve(imgArr);
     };
     img.crossOrigin = "anonymous";
