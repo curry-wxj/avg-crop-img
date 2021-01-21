@@ -1,0 +1,32 @@
+{
+  "name": "avg-crop-img",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curry-wxj/avg-crop-img.git"
+  },
+  "keywords": [],
+  "author": "wxj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/curry-wxj/avg-crop-img/issues"
+  },
+  "homepage": "https://github.com/curry-wxj/avg-crop-img#readme",
+  "sideEffects": false,
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-babel": "^5.2.2",
+    "rollup": "^2.37.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5"
+  }
+}
