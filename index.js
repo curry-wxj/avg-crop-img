@@ -27,7 +27,7 @@ function cutImg({ ctx, rowCount, colCount }) {
   }
   return Promise.all(imgPromiseArr);
 }
-function cropImg({ url, rowCount, colCount }) {
+function cropImg({ url, rowCount = 2, colCount = 2 }) {
   // 获取图片宽高 绘制到canvas中
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");

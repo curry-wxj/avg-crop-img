@@ -1,6 +1,6 @@
 {
   "name": "avg-crop-img",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/curry-wxj/avg-crop-img.git"
   },
-  "keywords": [],
+  "keywords": [
+    "crop",
+    "img",
+    "crop-img"
+  ],
   "author": "wxj",
   "license": "MIT",
   "bugs": {
@@ -27,6 +31,7 @@
     "rollup": "^2.37.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.12.5"
+    "@babel/runtime": "^7.12.5",
+    "@babel/runtime-corejs2": "^7.12.5"
   }
 }
